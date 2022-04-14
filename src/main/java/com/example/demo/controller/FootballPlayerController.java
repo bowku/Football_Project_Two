@@ -66,13 +66,13 @@ public class FootballPlayerController {
 		return ResponseEntity.ok(found);
 	}
 
-	@GetMapping("/getByShirtNumber/{shirtNumber}")
+	@GetMapping("/getByAge/{shirtNumber}")
 	public ResponseEntity<List<FootballPlayer>> getFootballPlayerByShirtNumber(@PathVariable Integer shirtNumber) {
 		List<FootballPlayer> found = this.service.getFootballPlayerByShirtNumber(shirtNumber);
 		return ResponseEntity.ok(found);
 	}
 
-	@GetMapping("/getByTeam/{team}")
+	@GetMapping("/getByName/{team}")
 	public ResponseEntity<List<FootballPlayer>> getFootballPlayerByTeam(@PathVariable String team) {
 		List<FootballPlayer> found = this.service.getFootballPlayerByTeam(team);
 		return ResponseEntity.ok(found);
