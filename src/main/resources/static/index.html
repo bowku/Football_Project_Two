@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Players</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+
+    <div class="container-sm px-4">
+        <h1>Football Players</h1>
+        <div class="row d-flex align-items-stretch">
+            <div class="col border ">
+                <form class="m-2">
+                    <h3>Create</h3>
+                    <input type="text" id="inputName" class="form-control" placeholder="enter player name to create" />
+                    <input type="number" id="inputShirtNumber" class="form-control mt-2" placeholder="enter shirt number to create" />
+                    <input type="text" id="inputTeam" class="form-control mt-2" placeholder="enter the team to create" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonCreate">POST</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+            <!-- Col 2 -->
+            <div class="col border">
+                <form class="m-2">
+                    <h3>Read by Id</h3>
+                    <input type="number" id="readId" class="form-control" placeholder="enter id of player" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonReadId">GET</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+            <!-- Col 3 -->
+            <div class="col border">
+                <form class="m-2">
+                    <h3>Read All</h3>
+                    <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">GET</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+            <!-- Col 4 -->
+            <div class="col border">
+                <form class="m-2">
+                    <h3>Update</h3>
+                    <input type="number" id="updateId" class="form-control" placeholder="enter id of item to update" />
+                    <input type="text" id="updateName" class="form-control mt-2"
+                        placeholder="enter player name to update" />
+                    <input type="number" id="updateShirtNumber" class="form-control mt-2"
+                        placeholder="enter shirt number to update" />
+                    <input type="text" id="updateTeam" class="form-control mt-2"
+                        placeholder="enter team to update" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonUpdate">PUT</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+    
+            <div class="col border">
+                <form class="m-2">
+                    <h3>Delete by Id</h3>
+                    <input type="number" id="deleteId" class="form-control"
+                        placeholder="enter id of player to be deleted" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonDeleteId">DELETE</button>
+                    <input type="text" style="display: none;" />
+                </form>
+            </div>
+        </div>
+
+        <div class="col border ">
+            <form class="m-2">
+                <h3>Output</h3>
+                <ul id="listOutput"></ul>
+            </form>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
