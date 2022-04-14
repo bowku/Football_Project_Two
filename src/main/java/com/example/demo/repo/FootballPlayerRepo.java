@@ -14,6 +14,6 @@ public interface FootballPlayerRepo extends JpaRepository<FootballPlayer, Intege
 
 	List<FootballPlayer> findByShirtNumber(Integer shirtNumber);
 
-	List<FootballPlayer> findByTeam(Integer team);
+	List<FootballPlayer> findByTeamIgnoreCase(String team);
 
 }

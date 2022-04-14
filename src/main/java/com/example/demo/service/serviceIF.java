@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
-public interface serviceIF {
+public interface serviceIF<T> {
 	
 	T create(T t);
 	
