@@ -29,6 +29,10 @@ public class FootballPlayer {
 		this.shirtNumber = shirtNumber;
 		this.team = team;
 	}
+	
+	public FootballPlayer() {
+		super();
+	}
 
 	public Integer getId() {
 		return id;
