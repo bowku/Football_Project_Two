@@ -32,7 +32,7 @@ DOM.buttonReadAll.onclick = () => get();
 const post = () => {
   axios.post(`http://localhost:8080/create`, {
     name: DOM.inputName.value,
-    ShirtNumber: DOM.inputShirtNumber.value,
+    shirtNumber: DOM.inputShirtNumber.value,
     team: DOM.inputTeam.value
   })
     .then((response) => {
