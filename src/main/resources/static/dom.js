@@ -3,6 +3,7 @@ export const buttonReadAll = document.getElementById(`buttonReadAll`);
 export const buttonReadId = document.getElementById(`buttonReadId`);
 export const buttonUpdate = document.getElementById(`buttonUpdate`);
 export const buttonDeleteId = document.getElementById(`buttonDeleteId`);
+export const buttonClear = document.getElementById(`buttonClear`);
 
 export const inputName = document.getElementById(`inputName`);
 export const inputShirtNumber = document.getElementById(`inputShirtNumber`);

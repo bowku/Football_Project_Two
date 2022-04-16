@@ -1,6 +1,6 @@
-body{
-    background-color: darkslategray;
-    color: whitesmoke;
-    font-family: "Roboto+Condensed";
-    font-weight: 400;
+body {
+    background-image: url('./wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
