@@ -45,26 +45,32 @@
         </form>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div style="width:40%">
+                <form class="m-2">
+                    <h3 class="p-3 mb-2 bg-light text-dark">Create</h3>
+                    <input type="text" id="inputName" class="form-control" placeholder="Enter player name to create" />
+                    <input type="number" id="inputShirtNumber" class="form-control mt-2"
+                        placeholder="Enter shirt number to create" />
+                    <input type="text" id="inputTeam" class="form-control mt-2"
+                        placeholder="Enter the team to create" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonCreate">Create Player</button>
+                    <input type="text" style="display: none;" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
+                </form>
+            </div>
 
-    <div class="col border ">
-        <form class="m-2">
-            <h3>Create</h3>
-            <input type="text" id="inputName" class="form-control" placeholder="Enter player name to create" />
-            <input type="number" id="inputShirtNumber" class="form-control mt-2"
-                placeholder="Enter shirt number to create" />
-            <input type="text" id="inputTeam" class="form-control mt-2" placeholder="Enter the team to create" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonCreate">Create Player</button>
-            <input type="text" style="display: none;" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
-        </form>
-    </div>
 
-
-
-    <div>
-        <form class="m-2">
-            <ul id="listOutput"></ul>
-        </form>
+            <div style="width:60%">
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Result</h3>
+                        <ul id="listOutput" class="p-3 mb-2 bg-light text-dark"></ul>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 

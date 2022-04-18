@@ -47,25 +47,30 @@
         </form>
     </nav>
 
-        
-    <div class="col border">
-        <form class="m-2">
-            <h3>Delete by Id</h3>
-            <input type="number" id="deleteId" class="form-control"
-                placeholder="Enter ID of player to be deleted" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonDeleteId">Delete Player</button>
-            <input type="text" style="display: none;" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
-        </form>
+
+    <div class="container">
+        <div class="row">
+            <div style="width:35%">
+                <form class="m-2">
+                    <h3 class="p-3 mb-2 bg-light text-dark">Delete by Id</h3>
+                    <input type="number" id="deleteId" class="form-control"
+                        placeholder="Enter ID of player to be deleted" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonDeleteId">Delete Player</button>
+                    <input type="text" style="display: none;" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
+                </form>
+            </div>
+
+
+            <div style="width:65%">
+                <form class="m-2">
+                    <h3 class="p-3 mb-2 bg-light text-dark">Result</h3>
+                    <ul id="listOutput" class="p-3 mb-2 bg-light text-dark">
+                    </ul>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-
-
-<div>
-    <form class="m-2">
-        <ul id="listOutput"></ul>
-    </form>
-</div>
 
 
 

@@ -47,28 +47,35 @@
         </form>
     </nav>
 
-    <div class="col border">
-        <form class="m-2">
-            <h3>Update</h3>
-            <input type="number" id="updateId" class="form-control" placeholder="Enter ID of item to update" />
-            <input type="text" id="updateName" class="form-control mt-2" placeholder="Enter player name to update" />
-            <input type="number" id="updateShirtNumber" class="form-control mt-2"
-                placeholder="Enter shirt number to update" />
-            <input type="text" id="updateTeam" class="form-control mt-2" placeholder="Enter team to update" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonUpdate">Update Player</button>
-            <input type="text" style="display: none;" />
-            <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
-        </form>
+    <div class="container">
+        <div class="row">
+            <div style="width:40%">
+                <form class="m-2">
+                    <h3 class="p-3 mb-2 bg-light text-dark">Update</h3>
+                    <input type="number" id="updateId" class="form-control" placeholder="Enter ID of item to update" />
+                    <input type="text" id="updateName" class="form-control mt-2"
+                        placeholder="Enter player name to update" />
+                    <input type="number" id="updateShirtNumber" class="form-control mt-2"
+                        placeholder="Enter shirt number to update" />
+                    <input type="text" id="updateTeam" class="form-control mt-2" placeholder="Enter team to update" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonUpdate">Update Player</button>
+                    <input type="text" style="display: none;" />
+                    <button type="button" class="btn btn-primary mt-2" id="buttonReadAll">Read All</button>
+                </form>
+            </div>
+
+
+            <div style="width:60%">
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Result</h3>
+                        <ul id="listOutput" class="p-3 mb-2 bg-light text-dark">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-    <div>
-        <form class="m-2">
-            <ul id="listOutput"></ul>
-        </form>
-    </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./update.js"></script>
