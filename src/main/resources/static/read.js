@@ -6,12 +6,11 @@ const getById = (id) => {
   axios.get(`http://localhost:8080/get/${id}`)
     .then((response) => {
       DOM.output.innerHTML = ``;
-      let data = response.data;
-      let str = `Player Name: ${data.name}<br>Shirt Number: ${data.shirtNumber}<br>
-              Current Team: ${data.team}`
-      DOM.output.innerHTML = str;
+      writeItem(response.data);
       console.log(response.data);
     }).catch((err) => {
+      get();
+      DOM.output.innerHTML = "<b><u>ID doesn't exist</u></b> <br><br>";
       console.log(err);
     });
 }
@@ -22,6 +21,7 @@ const getByName = (name) => {
   DOM.output.innerHTML = ``;
   axios.get(`http://localhost:8080/getByName/${name}`)
     .then((response) => {
+      DOM.output.innerHTML = ``;
       if (!Array.isArray(response.data)) {
         writeItem(response.data);
       } else {
@@ -37,9 +37,9 @@ const getByName = (name) => {
 DOM.buttonReadName.onclick = () => getByName(DOM.readName.value);
 
 const getByShirtNumber = (shirtNumber) => {
-  DOM.output.innerHTML = ``;
   axios.get(`http://localhost:8080/getByShirtNumber/${shirtNumber}`)
     .then((response) => {
+      DOM.output.innerHTML = ``;
       if (!Array.isArray(response.data)) {
         writeItem(response.data);
       } else {
@@ -55,11 +55,15 @@ const getByShirtNumber = (shirtNumber) => {
 DOM.buttonReadShirtNumber.onclick = () => getByShirtNumber(DOM.readShirtNumber.value);
 
 const getByTeam = (team) => {
-  DOM.output.innerHTML = ``;
   axios.get(`http://localhost:8080/getByTeam/${team}`)
     .then((response) => {
+      DOM.output.innerHTML = ``;
       if (!Array.isArray(response.data)) {
-        writeItem(response.data);
+        let data = response.data;
+        let str = `Player Name: ${data.name}<br>Shirt Number: ${data.shirtNumber}<br>
+                Current Team: ${data.team}`
+        console.log(str);
+        writeItem(str);
       } else {
         for (let item of response.data) {
           writeItem(item);
@@ -74,8 +78,8 @@ DOM.buttonReadTeam.onclick = () => getByTeam(DOM.readTeam.value);
 
 const writeItem = item => {
   const child = document.createElement(`li`);
-  child.id = item._id;
-  child.innerHTML = `${JSON.stringify(item)}`;
+  child.id = item.id;
+  child.innerHTML = `<b>ID: ${item.id}</b> <br> Name: ${item.name}<br> Shirt Number: ${item.shirtNumber}<br> Team: ${item.team} <br><br>`;
   DOM.output.appendChild(child);
 }
 
@@ -97,3 +101,5 @@ const get = () => {
 }
 
 DOM.buttonReadAll.onclick = () => get();
+
+get();
