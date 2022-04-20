@@ -56,6 +56,10 @@ Finally below is GitHub's feature branch model and pull requests. This is where 
 
 ### Databases:
 
+The main databases that was used throughout my project was MySQL server and local H2 database which was setup in the backend under application properties. The H2 database is primarily used for the integration testing and MySQL server is used to store data from our crud application.
+
+![Img](/Documentation/SQL/ERD.png)
+![Img](/Documentation/SQL/SQL.png)
 
 
 * * * * *
