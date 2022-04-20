@@ -46,6 +46,10 @@ Below is how my current sprint looks with to-do, ongoing and completed user-stor
 ![Img](/Documentation/Jira/Sprint.png)
 ![Img](/Documentation/Jira/Roadmap.png)
 
+Finally below is GitHub's feature branch model and pull requests. This is where the code is fully integrated into a Version Control.
+
+![Img](/Documentation/Jira/feature-branch.png)
+
 
 
 * * * * *
