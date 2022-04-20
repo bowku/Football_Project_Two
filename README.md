@@ -85,6 +85,11 @@ Then to compile everything a Jar file was made by using the mvn clean package in
 ![Img](/Documentation/backend/fatjar.png)
 ![Img](/Documentation/backend/fatjarexecuted.png)
 
+Finally to have an idea of how the classes and interfaces are used and how OOP is used, below outlines the UML - Unified Modeling Language:
+
+![Img](/Documentation/UML/UML update.png)
+
+
 
 * * * * *
 
