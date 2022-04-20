@@ -1,9 +1,19 @@
 CRUD Application - Football Player Project
 ====================================
 
+## Contents:
+* [Introduction](#Introduction)
+* [Planning Resources](#Planning-Resources)
+* [Databases](#Databases)
+* [Back-end + Testing](#Back-end + Testing)
+** [Testing](#Testing)
+* [Front-End](#Front-End)
+
 Mohamed Jaleil
 
-Google Slides Presentation link : 
+Google Slides Presentation link :
+
+Coverage:97.9%
 
 Introduction:
 -------------
