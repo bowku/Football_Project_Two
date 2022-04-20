@@ -52,7 +52,7 @@ below is GitHub's feature branch model and pull requests. This is where the code
 
 Finally there was a risk assessment created before any starts to technical work. I started with an excel file then generated a risk matrix.
 
-![Img](/Documentation/Risk Assessment/RiskAssessmentMatrix.png)
+![Img](/Documentation/Risk-Assessment/RiskAssessmentMatrix.png)
 
 
 
