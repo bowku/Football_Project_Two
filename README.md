@@ -38,10 +38,10 @@ Front-End Development - Front-end website created by using html,css and javascri
 
 First I will be talking about project management - Jira was used to create a Kanban board where user stories was allocated to its own epics and tasks. Some of the user stories was blocked until the stories had been completed. There was story point estimates included and MosCow prioritisation to assess which tasks and user stories are more urgent than others. The user stories also had acceptance criteria for situations where the condition has been met. The use of Jira-GitHub integeration will also be included in the example below:
 
-![Img](/documentation/Jira/UserStory.png)
-![Img](/documentation/Jira/Sprint.png)
-![Img](/documentation/Jira/Roadmap.png)
-![Img](/documentation/Jira/MoscowPriority.png)
+![Img](/Documentation/Jira/UserStory.png)
+![Img](/Documentation/Jira/Sprint.png)
+![Img](/Documentation/Jira/Roadmap.png)
+![Img](/Documentation/Jira/MoscowPriority.png)
 
 
 * * * * *
