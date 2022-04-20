@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Operation</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-light bg-light nav-pill nav-fill">
+        <form class="container-fluid justify-content-start">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="https://images.credly.com/size/340x340/images/eb774a73-1dd3-4f62-8e1f-17a93c8cc4cf/image.png"
+                    alt="" width="50" height="50">
+            </a>
+            <div class="container">
+                <div class="text-center">
+                    <a href="create.html">
+                        <button class="btn btn-outline-success btn-lg ml-5" style="width:220px"
+                            type="button">Create</button>
+                    </a>
+                    <a href="read.html">
+                        <button class="btn btn-outline-success btn-lg ml-5" style="width:220px"
+                            type="button">Read</button>
+                    </a>
+                    <a href="update.html">
+                        <button class="btn btn-outline-success btn-lg ml-5" style="width:220px"
+                            type="button">Update</button>
+                    </a>
+                    <a href="delete.html">
+                        <button class="btn btn-outline-success btn-lg ml-5" style="width:220px"
+                            type="button">Delete</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div style="width:40%">
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Read by Id</h3>
+                        <input type="number" id="readId" class="form-control" placeholder="Enter ID of player" />
+                        <button type="button" class="btn btn-warning mt-2" id="buttonReadId">Read By PlayerID</button>
+                        <button type="button" class="btn btn-warning mt-2" id="buttonReadAll">Read All</button>
+                        <input type="text" style="display: none;" />
+                    </form>
+                </div>
+
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Read by Name</h3>
+                        <input type="text" id="readName" class="form-control" placeholder="Enter Name of player" />
+                        <button type="button" class="btn btn-warning mt-2" id="buttonReadName">Read By Player
+                            name</button>
+                        <input type="text" style="display: none;" />
+                    </form>
+                </div>
+
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Read by Shirt Number</h3>
+                        <input type="number" id="readShirtNumber" class="form-control"
+                            placeholder="Enter Shirt Number of player" />
+                        <button type="button" class="btn btn-warning mt-2" id="buttonReadShirtNumber">Read By Shirt
+                            Number
+                        </button>
+                        <input type="text" style="display: none;" />
+                    </form>
+                </div>
+
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Read by Current Team</h3>
+                        <input type="text" id="readTeam" class="form-control"
+                            placeholder="Enter current Team of player" />
+                        <button type="button" class="btn btn-warning mt-2" id="buttonReadTeam">Read By current
+                            Team</button>
+                        <input type="text" style="display: none;" />
+                    </form>
+                </div>
+            </div>
+
+
+            <div style="width:60%">
+                <div>
+                    <form class="m-2">
+                        <h3 class="p-3 mb-2 bg-light text-dark">Result</h3>
+                        <ul id="listOutput" class="p-3 mb-2 bg-light text-dark">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./read.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
