@@ -1,5 +1,10 @@
 CRUD Application - Football Player Project
 ====================================
+Mohamed Jaleil
+
+Google Slides Presentation link :
+
+Coverage : 97.9%
 
 ## Contents:
 * [Introduction](#Introduction)
@@ -8,11 +13,6 @@ CRUD Application - Football Player Project
 * [Back-End + Testing](#Back-End+Testing)
 * [Front-End](#Front-End)
 
-Mohamed Jaleil
-
-Google Slides Presentation link :
-
-Coverage:97.9%
 
 Introduction:
 -------------
