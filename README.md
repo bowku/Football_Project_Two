@@ -5,7 +5,7 @@ CRUD Application - Football Player Project
 * [Introduction](#Introduction)
 * [Planning Resources](#Planning-Resources)
 * [Databases](#Databases)
-* [Back-end + Testing](#Back-end+Testing)
+* [Back-End + Testing](#Back-End+Testing)
 * [Front-End](#Front-End)
 
 Mohamed Jaleil
