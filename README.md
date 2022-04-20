@@ -43,7 +43,7 @@ Front-End Development - Functioning front-end website with API integration.
 
 * * * * *
 
-### Back-end + Testing:
+### Back-End + Testing:
 
 
 
