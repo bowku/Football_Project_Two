@@ -87,7 +87,7 @@ Then to compile everything a Jar file was made by using the mvn clean package in
 
 Finally to have an idea of how the classes and interfaces are used and how OOP is used, below outlines the UML - Unified Modeling Language:
 
-![Img](/Documentation/UML/UMLupdate.png)
+![Img](/Documentation/UML/UMLupdate.png = 250x250)
 
 
 
