@@ -89,7 +89,7 @@ Once all the back-end was completed, MockMVC was used as the primary source of i
 
 all tests and the extension get functions was successfull and ended with a 97.9% test coverage.
 
-![Img](/Documentation/Testing/Coverage.png)
+![Img](/Documentation/Testing/coverage.png)
 ![Img](/Documentation/Testing/IntegrationTesting.png)
 
 This is a preview of the test codes:
