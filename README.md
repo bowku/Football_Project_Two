@@ -70,7 +70,7 @@ Finally below image is a preview of MySQL workbench to use select manipulations 
 
 ### Back-End:
 
-The back-end was heavily focused on Java by the use of the SpringBoot Framework in an OOP manner. There was manipulations of implementations, extends, interfaces and classes with the correct mappings such as Post,Get,Put and Delete to have a bijection to CRUD.
+The back-end was heavily focused on Java by the use of the SpringBoot Framework in an OOP manner. There was manipulations of implementations, extends, interfaces and classes with the correct mappings such as Post,Get,Put and Delete to have a bijection to CRUD. The Get mapping was then also used as an extension to find not just by id, but with name, shirt number and also team.
 
 below is an example of some of the code in Java:
 ![Img](/Documentation/backend/backendCode.png)
@@ -85,7 +85,17 @@ Then to compile everything a Jar file was made by using the mvn clean package in
 
 ### Testing:
 
-#### Testing
+Once all the back-end was completed, MockMVC was used as the primary source of integration testing. This was used to mock the Controller class and give it dummy HTTP requests.
+
+all tests and the extension get functions was successfull and ended with a 97.9% test coverage.
+
+![Img](/Documentation/Testing/Coverage.png)
+![Img](/Documentation/Testing/IntegrationTesting.png)
+
+This is a preview of the test codes:
+
+![Img](/Documentation/Testing/TestsMVC.png)
+
 
 
 
