@@ -79,7 +79,7 @@ DOM.buttonReadTeam.onclick = () => getByTeam(DOM.readTeam.value);
 const writeItem = item => {
   const child = document.createElement(`li`);
   child.id = item.id;
-  child.innerHTML = `<b>ID: ${item.id}</b> <br> Name: ${item.name}<br> Shirt Number: ${item.shirtNumber}<br> Team: ${item.team} <br><br>`;
+  child.innerHTML = `<b>ID: ${item.id}</b> <br> Name: ${item.name}<br> Shirt Number: ${item.shirtNumber}<br> Team: ${item.team} <br><hr>`;
   DOM.output.appendChild(child);
 }
 
