@@ -10,11 +10,12 @@ Coverage : 97.9%
 * [Introduction](#Introduction)
 * [Planning Resources](#Planning-Resources)
 * [Databases](#Databases)
-* [Back-End + Testing](#Back-End-+-Testing)
+* [Back-End](#Back-End)
+* [Testing](#Testing)
 * [Front-End](#Front-End)
 
 
-Introduction
+Introduction:
 -------------
 
 The brief was to create a CRUD application that encapsulated all the core modules covered during the training.
@@ -31,22 +32,25 @@ Front-End Development - Functioning front-end website with API integration.
 
 * * * * *
 
-### Planning Resources
+### Planning Resources:
 
 
 
 * * * * *
 
-### Databases
+### Databases:
 
 
 
 * * * * *
 
-### Back-End + Testing
+### Back-End:
 
 
 
+* * * * *
+
+### Testing:
 
 #### Testing
 
@@ -54,5 +58,5 @@ Front-End Development - Functioning front-end website with API integration.
 
 * * * * *
 
-### Front-End
+### Front-End:
 
