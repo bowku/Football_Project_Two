@@ -89,10 +89,6 @@ Finally to have an idea of how the classes and interfaces are used and how OOP i
 
 ![Img](/Documentation/UML/UMLupdate.png)
 
-<p align="center">
-  <img width="800" height="600" src="/Documentation/UML/UMLupdate.png">
-</p>
-
 
 
 * * * * *
