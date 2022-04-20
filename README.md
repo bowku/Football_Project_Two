@@ -46,9 +46,13 @@ Below is how my current sprint looks with to-do, ongoing and completed user-stor
 ![Img](/Documentation/Jira/Sprint.png)
 ![Img](/Documentation/Jira/Roadmap.png)
 
-Finally below is GitHub's feature branch model and pull requests. This is where the code is fully integrated into a Version Control.
+below is GitHub's feature branch model and pull requests. This is where the code is fully integrated into a Version Control.
 
 ![Img](/Documentation/Jira/feature-branch.png)
+
+Finally there was a risk assessment created before any starts to technical work. I started with an excel file then generated a risk matrix.
+
+![Img](/Documentation/Risk Assessment/RiskAssessmentMatrix.png)
 
 
 
@@ -87,19 +91,28 @@ Then to compile everything a Jar file was made by using the mvn clean package in
 
 Once all the back-end was completed, MockMVC was used as the primary source of integration testing. This was used to mock the Controller class and give it dummy HTTP requests.
 
-all tests and the extension get functions was successfull and ended with a 97.9% test coverage.
+all tests and the extension get functions was successful and ended with a 97.9% test coverage.
 
 ![Img](/Documentation/Testing/coverage.png)
+![Img](/Documentation/Testing/TestsMVC.png)
 ![Img](/Documentation/Testing/IntegrationTesting.png)
 
 This is a preview of the test codes:
 
-![Img](/Documentation/Testing/TestsMVC.png)
-
-
-
+![Img](/Documentation/Testing/IntegrationTesting.png)
 
 * * * * *
 
 ### Front-End:
+
+The front end used HTML,CSS and JavaScript. The styling was primarily the Bootstrap framework such as NavBar, fonts, borders and different button styles.
+
+Javascript used axios for the API integration and made sure everything that was being presented as the output on the website was structured in a clear manner. The Navbar had buttons which was linked to other HTML files, so create, read, update, delete there was seperate JavaScript and HTML files associated to them. 
+
+
+![Img](/Documentation/frontend/create2.png)
+![Img](/Documentation/frontend/readbyid.png)
+![Img](/Documentation/frontend/readbyteam.png)
+![Img](/Documentation/frontend/update2.png)
+![Img](/Documentation/frontend/delete2.png)
 
