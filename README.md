@@ -70,6 +70,15 @@ Finally below image is a preview of MySQL workbench to use select manipulations 
 
 ### Back-End:
 
+The back-end was heavily focused on Java by the use of the SpringBoot Framework in an OOP manner. There was manipulations of implementations, extends, interfaces and classes with the correct mappings such as Post,Get,Put and Delete to have a bijection to CRUD.
+
+below is an example of some of the code in Java:
+![Img](/Documentation/backend/backendCode)
+
+Then to compile everything a Jar file was made by using the mvn clean package in the gitbash terminal for universal use:
+
+![Img](/Documentation/backend/fatjar)
+![Img](/Documentation/backend/fatjarexecuted)
 
 
 * * * * *
