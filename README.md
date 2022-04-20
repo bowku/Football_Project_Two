@@ -46,9 +46,13 @@ Below is how my current sprint looks with to-do, ongoing and completed user-stor
 ![Img](/Documentation/Jira/Sprint.png)
 ![Img](/Documentation/Jira/Roadmap.png)
 
-Finally below is GitHub's feature branch model and pull requests. This is where the code is fully integrated into a Version Control.
+below is GitHub's feature branch model and pull requests. This is where the code is fully integrated into a Version Control.
 
 ![Img](/Documentation/Jira/feature-branch.png)
+
+Finally there was a risk assessment created before any starts to technical work. I started with an excel file then generated a risk matrix.
+
+![Img](/Documentation/Risk-Assessment/RiskAssessmentMatrix.png)
 
 
 
@@ -56,23 +60,59 @@ Finally below is GitHub's feature branch model and pull requests. This is where 
 
 ### Databases:
 
+The main databases that was used throughout my project was MySQL server and local H2 database which was setup in the backend under application properties. The H2 database is primarily used for the integration testing and MySQL server is used to store data from our crud application.
+
+The below image is the ERD - Entity Relationship Diagram which highlights the properties and links in the database to other entities:
+
+![Img](/Documentation/SQL/ERD.png)
+
+Finally below image is a preview of MySQL workbench to use select manipulations to check if our application is working accordingly.
+![Img](/Documentation/SQL/SQL.png)
 
 
 * * * * *
 
 ### Back-End:
 
+The back-end was heavily focused on Java by the use of the SpringBoot Framework in an OOP manner. There was manipulations of implementations, extends, interfaces and classes with the correct mappings such as Post,Get,Put and Delete to have a bijection to CRUD. The Get mapping was then also used as an extension to find not just by id, but with name, shirt number and also team.
+
+below is an example of some of the code in Java:
+![Img](/Documentation/backend/backendCode.png)
+
+Then to compile everything a Jar file was made by using the mvn clean package in the gitbash terminal for universal use:
+
+![Img](/Documentation/backend/fatjar.png)
+![Img](/Documentation/backend/fatjarexecuted.png)
 
 
 * * * * *
 
 ### Testing:
 
-#### Testing
+Once all the back-end was completed, MockMVC was used as the primary source of integration testing. This was used to mock the Controller class and give it dummy HTTP requests.
 
+all tests and the extension get functions was successful and ended with a 97.9% test coverage.
 
+![Img](/Documentation/Testing/coverage.png)
+![Img](/Documentation/Testing/TestsMVC.png)
+![Img](/Documentation/Testing/IntegrationTesting.png)
+
+This is a preview of the test codes:
+
+![Img](/Documentation/Testing/IntegrationTesting.png)
 
 * * * * *
 
 ### Front-End:
+
+The front end used HTML,CSS and JavaScript. The styling was primarily the Bootstrap framework such as NavBar, fonts, borders and different button styles.
+
+Javascript used axios for the API integration and made sure everything that was being presented as the output on the website was structured in a clear manner. The Navbar had buttons which was linked to other HTML files, so create, read, update, delete there was seperate JavaScript and HTML files associated to them. 
+
+
+![Img](/Documentation/frontend/create2.png)
+![Img](/Documentation/frontend/readbyid.png)
+![Img](/Documentation/frontend/readbyteam.png)
+![Img](/Documentation/frontend/update2.png)
+![Img](/Documentation/frontend/delete2.png)
 
